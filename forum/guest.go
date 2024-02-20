@@ -1,3 +1,9 @@
+package main
+
+import (
+	"fmt"
+	"log"
+)
 
 func outMessage(){
 	fmt.Println("До скорой встречи! Ждем Вас снова!")
