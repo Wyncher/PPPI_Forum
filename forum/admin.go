@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
-var adminList = []
+var adminList []admin
+
 type admin struct {
 	name string
 	age  int
@@ -11,10 +12,12 @@ type admin struct {
 
 func main() {
 
-	add("Victor",15,"Administrator of shop")
+	addAdmin("Victor", 15, "Administrator of shop")
 }
-
-func add(name, age, post) {
+func addAdmin(name, age, post) {
 	a := admin{name, age, post}
-	adminList = append(adminList,a)
+	adminList = append(adminList, a)
+}
+func petTheCat() {
+	fmt.Println("Кот доволен!")
 }
